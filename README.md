@@ -21,7 +21,7 @@ How to customise it ?
 3. Add the feed link to dictByLabel, dictBySrc and CACHE.
 4. Update xmlDispatcher function with the feed, if necessary.
 5. Launch the application through command line or google app engine launcher.
-6. Visit url "localhost:8080/SuperAdminQQ", which triggles function runApplication() who parse the feeds.
+6. Visit url "localhost:8080/SuperAdminQQ", which triggles function runApplication() to parse the feeds.
 7. If no error occured, visit url "localhost:8080", you will see the home page.
 
 
