@@ -1,0 +1,28 @@
+body{
+	font:normal 24px arial;
+}
+h1{ 
+	margin: 20px 0;
+	font-size:50px;
+	font-weight:bold;
+}
+
+#wrapper{
+	margin:0 auto;
+	width:1000px;
+
+}
+#content p {
+	float:left;
+	padding: 10px 10px;
+	width:230px;
+}
+
+#footer{
+	margin:20px  auto;
+	width:1000px;
+	font-size:13px;
+	text-align: center;
+	color:#bababa;
+
+}

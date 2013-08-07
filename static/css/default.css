@@ -1,0 +1,120 @@
+/*body {background-image:url('/static/img/background_img2.gif')}*/
+/*sidebar style*/
+#container{
+    background-color: #f2f3f5;
+    overflow: hidden;
+}
+#sidebar{
+    top: 190px;
+    z-index: 600;
+    min-height: 1000px;
+    left: 35px;
+    position: absolute;
+}
+#sidebar .sidebar_entry{
+width: 250px;
+height: auto;
+position: relative;
+text-align: center;
+font-family: 'Helvetica Neue','Arial','sans-serif';
+font-size: 23px;
+text-transform: uppercase;
+padding: 25px 0;
+cursor: pointer;
+list-style-type: none;
+border-radius: 2px;
+color:#494949;
+}
+
+#sidebar .sidebar_entry a{
+    color:#494949;
+    text-decoration: none;
+    font-family: 'Helvetica Neue','Arial','sans-serif';
+}
+/*wrapper style*/
+#wrapper{
+    /*height:1000px;*/
+    width:920px;
+    margin-right:5px;
+    float:right;
+    /*background-color:cornsilk;*/
+    /*border: 1px dashed greenyellow;*/
+
+}
+#header {
+    /*height :50px;*/
+    /*width:500px;*/
+    /*margin: 0 0 auto;*/
+    /*border: 1px dashed #808080;*/
+}
+#content{
+    /*height: 800px;*/
+    width:900px;
+    margin:10px 10px auto;
+    /*border: 1px dashed royalblue;*/
+    clear:both;
+
+}
+#footer{
+    /*postion: absolute;*/
+    /*bottom:0;*/
+    /*height: 50px;*/
+    /*width:60px;*/
+    /*margin: 0 10px auto;*/
+    /*border: 1px dashed tomato;*/
+    /*clear:both;*/
+
+}
+
+img{
+    float:left;
+    height:120px;
+    width:120px;
+    margin: 0 15px 5px 0;
+    padding: 0 5px 5px 5px;
+    /*box-shadow: 3px 3px 3px #7C7C7C;*/
+    border: 5px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+}
+
+.cell{
+    padding: 0 10px 10px 10px;
+    /*height:325px;*/
+    width:228px;
+    border:1px solid #f1f1f1;
+    margin:15px 15px 30px 15px;
+    /*box-shadow: 3px 3px 3px  #808080;*/
+    border-radius: 4px;
+    background-color:#f1f1f1;
+    border: 10px solid #ffffff;
+    border-bottom: 20px solid #ffffff;
+}
+
+.cell a {
+    text-decoration: none;
+    color:black;
+
+}
+
+.sidebar_entry >a{
+     color:white;
+}
+
+.article_title{
+    font-size:20px;
+    font-family:'Helvetica Neue','Arial','sans-serif';
+}
+
+#footer{
+    text-align: center;
+    font-size:24px;
+    margin-bottom:20px;
+
+
+}
+#footer a{
+     text-decoration: none;
+    color:#000000;
+    font-family: 'Helvetica Neue','Arial','sans-serif';
+}
+

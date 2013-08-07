@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+
+        {%block title %}
+            ZerothAve-Arts
+        {% endblock %}
+      
+
+{% block content %}
+        {% if articles %}
+
+         {% for article in articles %}
+            <div class="cell">
+            <div class="article_link"><a href={{article.link}} target="_blank">
+            <div class="article_title"><p>{{ article.title|e }}</p></div>
+                  <hr>
+            <div class="article_img"><img src={{article.imgLink}} alt="enjoy reading"/></div>
+             </a></div>
+           <div class="article_description"><p>{{ article.description|e }}</p></div>
+
+
+
+            </div>
+            {% endfor%}
+
+        {% else %}
+
+                <h3>{{errorMsg}}</h3>
+        {% endif %}
+
+{% endblock %}
+
+
+       

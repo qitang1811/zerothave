@@ -1,0 +1,93 @@
+<DOCTYPE HTML>
+
+   <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{%block title %}
+
+        {% endblock %}</title>
+
+        <link rel="stylesheet" href="static/css/default.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+    <div id="sidebar">
+
+        <ul>
+            <label><li class="sidebar_entry" onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/">HOME</a></li></label>
+            <hr>
+            <label><li class="sidebar_entry "  onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/story">Story</a></li></label>
+            <hr>
+
+            <label><li class="sidebar_entry"  onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/opinion">Opinion</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry" onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/man">Man</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry"  onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="art">Arts</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry"  onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/woman">Woman</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry" onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/life">Life</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry"  onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/travel">Travel</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry" onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/technology">Technology</a></li></label>
+              <hr>
+
+            <label><li class="sidebar_entry"  onmouseover="style.backgroundColor='#ffffff'; style.color='#000000';" onmouseout="style.backgroundColor='#f2f3f5';"><a href="/books">Books</a></li></label>
+              <hr>
+{#            <div class="cubic" onmouseover="style.backgroundColor='#FFB90F';" onmouseout="style.backgroundColor='#D2D2CC'"><a href="/opinion"> <div class="cubicInner"><p class="text-center">Opinion</p></div></a></div>#}
+
+        </ul>
+
+
+    </div>
+
+    <div id="wrapper">
+        {% block header %}
+             <div id="header">
+
+             </div>
+        {% endblock %}
+
+
+        <div id="content" class="js-masonry" data-masonry-options='{ "columnWidth": 300, "itemSelector": ".cell" }'>
+        {% block content %}
+
+        {% endblock %}
+        </div>
+
+        {% block footer %}
+     <div id="footer">
+        <a href="#header"> Back To Top</a>
+
+     </div>
+        {% endblock %}
+
+    </div>
+        </div>
+
+    <script type="text/javascript" src="static/js/masonry.js"></script>
+    <script type="text/javascript">
+        var container = document.querySelector('#content');
+        var msnry;
+        imagesLoaded(container, function(){
+
+          msnry =   new Masonry( container, {
+        // options
+        itemSelector: '.cell',
+        columnWidth: 300,
+        gutterWidth:20
+        });
+            });
+    </script>
+    </body>
+
+ </html>
